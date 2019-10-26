@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-reader.ss" "lang")((modname parameterization-v2) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-reader.ss" "lang")((modname parameterization-v2) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ())))
 
 
 ;; ListOfString -> Boolean
@@ -25,12 +25,6 @@
 
 (define (contains-mcgill? los) (contains? "McGill" los))
 
-;; produce true if los produces s
-(check-expect (contains? "McGill" empty) false)
-(check-expect (contains? "UBC" empty) false)
-(check-expect (contains? "UBC" (cons "UBC" empty)) true)
-(check-expect (contains? "McGill" (cons "UBC" (cons "McGill" empty))) true)
-(check-expect (contains? "Toronto" (cons "UBC" (cons "McGill" empty))) false)
 
 (define (contains? s los)
   (cond [(empty? los) false]
@@ -38,9 +32,6 @@
          (if (string=? (first los) s)
              true
              (contains? s (rest los)))]))
-
-
-
 
 
 ;; ====================
@@ -63,12 +54,6 @@
 
 (define (square-roots lon) (map2 sqrt lon))
 
-;; given fn and (list n0 n1 n2 ...) produce (list (fn n0) (fn n1) (fn n2)...) 
-(check-expect (map2 sqr empty) empty)
-(check-expect (map2 sqrt empty) empty)
-(check-expect (map2 sqrt (list 9 16)) (list 3 4))
-(check-expect (map2 sqr (list 3 4)) (list 9 16))
-(check-expect (map2 abs (list 3 4 -9)) (list 3 4 9))
 
 (define (map2 fn lon)
   (cond [(empty? lon) empty]
@@ -98,13 +83,6 @@
 
 (define (negative-only lon) (filter2 negative? lon))
 
-;; given a predicate pred and (list n0 n1 n2 ...) filter the list by the pred (list (pred n0) (pred n1) (pred n2)...) 
-(check-expect (filter2 positive? empty) empty)
-(check-expect (filter2 negative? empty) empty)
-(check-expect (filter2 boolean? empty) empty)
-(check-expect (filter2 negative? (list 1 -2 3 -4)) (list -2 -4))
-(check-expect (filter2 boolean? (list true 4 false -8)) (list true false))
-(check-expect (filter2 positive? (list 1 -2 3 -4)) (list 1 3))
 
 (define (filter2 pred lon)
   (cond [(empty? lon) empty]
