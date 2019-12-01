@@ -1,7 +1,7 @@
 # ossu
-The OSSU curriculum is a complete education in computer science using online materials. It's not merely for career training or professional development. It's for those who want a proper, well-rounded grounding in concepts fundamental to all computing disciplines, and for those who have the discipline, will, and (most importantly!) good habits to obtain this education largely on their own, but with support from a worldwide community of fellow learners.  It is designed according to the degree requirements of undergraduate computer science majors, minus general education (non-CS) requirements, as it is assumed most of the people following this curriculum are already educated outside the field of CS. The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc., but specifically chosen to meet the following criteria.
+The OSSU curriculum is a complete education in computer science using online materials. It's for those who want a proper, well-rounded grounding in concepts fundamental to all computing disciplines, and for those who have the discipline, will, and (most importantly!) good habits to obtain this education largely on their own, but with support from a worldwide community of fellow learners. The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc., but specifically chosen to meet the following criteria.
 
-# Simple Data -edX, University of Brtish Columbia
+# Simple Data - edX, University of Brtish Columbia
 https://www.edx.org/course/how-code-simple-data-ubcx-htc1x
 The goal of the Simple Data class is learn techniques to
 1)  produce programs with consistent structure that are easy to modify later
@@ -29,3 +29,32 @@ In particular, I payed attention to
 4) To play type (main G0) in the console and hit enter.
 5) Press let-key or right-key to move. Press space-key to shoot. 
 
+# Complex Data - edX, University of Brtish Columbia
+https://courses.edx.org/courses/course-v1:UBCx+HtC2x+2T2017/courseware/d4b5b9454a3e47689c866b557162d73d/044aa02b1c6a4911ac519b11d2459526/1?activate_block_id=block-v1%3AUBCx%2BHtC2x%2B2T2017%2Btype%40vertical%2Bblock%400bcddf7c9bdc4df0b22b70f1f81ce6ba
+The Complex Data class builds-up on the Simple Data class and teaches techniques on complex data structures. The course follows a formalized, structural approach to (functional) programming which heavily emphasizes test-driven development and clean function design. 
+
+## The following topics were covered:
+
+- Mutually referential data and function design (arbitrary-arity trees)
+- Backtracking search
+- Search algorithms
+- Determing cases using a cross-product table with complex data structures
+- Local variables, lexical scoping and encapsulation
+- Abstraction
+- Closures
+- Generative Recursion
+- Lambda Expressions
+- Tail Recursion
+- Accumulators: context-preserving accumulators, result-so-far accumulators (rsf) and worklist accumulators (todo)
+- Graph structures
+- Blending templates for different data types
+
+## Final project
+The final project (complex-data/ta-solver-starter.rkt) wraps up the learning of the Simple Data and Complex Data courses. 
+It involed two complex tasks: 
+1) To write a Twitter-like program working on graph structures
+2) A program to generate a schedule for teachers which matches teachers and their availability under certain constraints.
+
+**Additional learnings:** 
+- DrRacket, Advanced Student Language (ASL), Functional Programming
+- strong focus on clean and test-driven function design
