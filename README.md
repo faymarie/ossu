@@ -58,3 +58,26 @@ It involed two complex tasks:
 **Additional learnings:** 
 - DrRacket, Advanced Student Language (ASL), Functional Programming
 - strong focus on clean and test-driven function design
+
+# Programming Languages, Part A by University of Washington
+
+Basic concepts of programming languages, with a strong emphasis on functional programming. The course uses the language ML. 
+https://www.coursera.org/learn/programming-languages
+
+## Learnings
+- functional programming concepts
+- statically vs. dynamically typed languages
+- shadowing, lexical scope, closures
+- custom / compound data types (each of, one of types)
+- pattern matching
+- recursion and tail recursion
+- higher-order functions, map, filter fold
+- function composition
+- currying and partial application of functions
+- mutable data types in functional programming
+- callbacks
+- type inference and polymorhic typing
+- mutual recursion
+- module management with signatures
+- privacy
+- equivalence 
